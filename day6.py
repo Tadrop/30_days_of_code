@@ -9,7 +9,7 @@ def primeSum(x):
                 break
         if b is not a:
             sum+=a
-    print(sum)
-primeSum(10)
-primeSum(20)
-primeSum(100)
+    return sum
+print(primeSum(10))
+print(primeSum(20))
+print(primeSum(100))
