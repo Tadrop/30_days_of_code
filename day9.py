@@ -1,6 +1,6 @@
 def fibSum(num):
     if not isinstance(num,int):
-        return  'Invalid input, number must be positive'
+        return  'Invalid input, number must be positive integer'
     if num == 0 :
         return 0
     elif num < 0:
@@ -9,9 +9,9 @@ def fibSum(num):
         pass
     number =0
     a,c=0,1
-    while a>=num:
+    while c>=num:
         a,c= c, a+c
-        if c%2 == 0 :
+        if (c%2) == 0 :
             num+=c
     return num
 print(fibSum(10))
